@@ -4,3 +4,9 @@ variable "bucket_name" {
   default = ""
   
 }
+
+variable "aws_buckets" {
+  type = list(string)
+  default = ["shriiiiiiiiiii","rahullll","himanshuuuuuu","terraformmmmmm","jenkinsssssss"]
+  
+}
