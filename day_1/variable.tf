@@ -7,6 +7,6 @@ variable "bucket_name" {
 
 variable "aws_buckets" {
   type = list(string)
-  default = ["shriiiiiiiiiii","rahullll","himanshuuuuuu","terraformmmmmm","jenkinsssssss"]
+  default = ["shriiii","rahuoo","himanshuuuuuu","terraformmmmmm","jenkinsssssss"]
   
 }
