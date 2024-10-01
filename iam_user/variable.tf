@@ -4,14 +4,14 @@ variable "user_names" {
   default = ["aws", "gcp", "azure", "terraform", "cloud"]
 }
 
-variable "password_length" {
-  description = "Length of the randomly generated passwords"
-  type        = number
-  default     = 16
+variable "user_policies" {
+  type = map(string)
+  default = {
+    "aws"       = "arn:aws:iam::aws:policy/AdministratorAccess"
+    "gcp"       = "arn:aws:iam::aws:policy/AmazonS3FullAccess"
+    "azure"     = "arn:aws:iam::aws:policy/AmazonEC2FullAccess"
+    "terraform" = "arn:aws:iam::aws:policy/AmazonRDSFullAccess"
+    "cloud"     = "arn:aws:iam::aws:policy/AWSCloudFormationFullAccess"
+  }
 }
 
-variable "password_special_characters" {
-  description = "Whether to include special characters in the password"
-  type        = bool
-  default     = true
-}
